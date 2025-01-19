@@ -1,0 +1,447 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'cairo';
+    text-decoration: none;
+    direction: rtl;
+    border: none;
+    outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4eb471;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #54c47b;
+}
+
+nav {
+    height: 70px;
+    box-shadow: 0px 0px 5px #0000004f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    position: sticky;
+    top: 0%;
+    left: 0px;
+    z-index: 999999999999;
+    background-color: #fff;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo .img-con {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border: solid 2px #4eb471;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+nav .logo img {
+    width: 100%;
+    display: block;
+}
+
+nav .logo p {
+    font-size: 24px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .links a {
+    background-color: #4eb471;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+main {
+
+    display: flex;
+    align-items: flex-start;
+
+}
+
+main aside {
+    height: calc(100vh - 70px);
+    width: fit-content;
+    box-shadow: 0px 0px 3px #0000004f;
+    background-color: #4eb471;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 70px;
+    right: 0%;
+    z-index: 22;
+}
+
+main aside .upper a {
+    width: 100%;
+    padding: 10px 30px;
+    padding-left: 50px;
+    border-bottom: solid 1px #ffffffa9;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+main aside .upper a:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+main aside .upper a.active {
+    background-color: #888;
+    color: #fff;
+}
+
+main aside .upper a:hover span {
+    border: solid 2px #4eb471;
+    color: #4eb471;
+}
+
+main aside .upper a.active span {
+    border: solid 2px #fff;
+    color: #fff;
+}
+
+main aside .upper a span {
+    color: #fff;
+    width: 30px;
+    aspect-ratio: 1/1;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+main aside .upper a strong {
+    font-weight: 200 !important;
+}
+
+main aside .lower {
+    background-color: #fff;
+    padding: px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #222;
+    font-size: 14px;
+}
+
+main aside .lower a {
+    color: #222;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+main .main-section {
+    background-color: #f8f9fa;
+    display: flex;
+    min-height: calc(100vh - 70px);
+    position: relative;
+    flex-grow: 1;
+    padding: 90px 0px;
+}
+
+main .main-section .page-title {
+    padding: 15px 5%;
+    background-color: #f0f0f0;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+main .main-section .page-title i {
+    color: #4eb471;
+    margin-left: 7px;
+}
+
+main .main-section .page-title span {
+    color: #666;
+}
+
+main .main-section .page-title strong {
+    color: #666;
+}
+
+main .main-section form {
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #00000028;
+    width: 500px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform: translateY(10px);
+}
+
+main .main-section form>*,
+.container-box>* {
+    display: block;
+    width: 100%;
+    border: solid 1px #18181823;
+    padding: 10px;
+    resize: none;
+    border-radius: 3px;
+}
+
+main .main-section form textarea {
+    height: 120px;
+}
+
+main .main-section form .file-box {
+    height: 100px;
+    position: relative;
+    background-color: #4eb4722c;
+}
+
+main .main-section form .file-box:hover {
+    background-color: #4eb47250;
+}
+
+main .main-section form .file-box input {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 222;
+    cursor: pointer;
+}
+
+
+main .main-section form .file-box .layer {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+
+}
+
+main .main-section form .file-box .layer .child {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2px;
+}
+
+main .main-section form .file-box .layer p {
+    color: #555;
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+main .main-section form .file-box .layer span {
+    line-height: 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #777;
+}
+
+main .main-section form .file-box .layer span:nth-child(3) {
+    color: #999;
+    font-size: 14px;
+}
+
+main .main-section form button {
+    color: #fff;
+    background-color: #4eb471;
+    cursor: pointer;
+}
+
+main .main-section form button:hover {
+    background-color: #54c47b;
+}
+
+.success-message {
+    background-color: #4eb472af;
+}
+
+.error-message {
+    background-color: #ff634780;
+}
+
+/* about */
+
+.container-box {
+    flex-direction: column;
+    display: flex !important;
+    gap: 10px;
+    padding: 20px !important;
+    border: solid 2px #666 !important;
+}
+
+.container-box .box-title {
+
+    color: #4eb471;
+    padding: 0%;
+    width: fit-content;
+    border: none;
+}
+
+label {
+    border: none !important;
+    border-bottom: solid 1px #4eb471 !important;
+    width: fit-content !important;
+}
+
+/* services */
+
+.services_container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services_container .card {
+    width: calc((100% - 60px) / 4);
+    border: solid 1px #18181823;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.services_container .card img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/.7;
+    object-fit: cover;
+}
+
+.services_container .card .serv-name {
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.services_container .card .serv-description {
+    color: #222;
+    padding: 0px 10px;
+    line-height: 18px;
+}
+
+.services_container .card a,
+.services_container .card button {
+    display: block;
+    width: calc(100% - 20px);
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.services_container .card .update-btn {
+    background-color: #4eb471;
+}
+
+.services_container .card .delete-btn {
+    background-color: tomato;
+}
+
+.add-serv-box {
+    position: relative;
+}
+
+.add-serv-box:hover {
+    box-shadow: 0px 0px 5px #2222228c;
+}
+
+.add-serv-box .add-serv-btn {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #fff !important;
+    background-color: #6b6b6b38;
+    backdrop-filter: blur(6px);
+    width: 100% !important;
+    height: 100%;
+    margin: 0% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px !important;
+    gap: 10px;
+    text-shadow: 0px 0px 5px #222;
+
+}
+
+@media (min-width:0px) and (max-width:600px) {
+    .services_container .card {
+        width: 100%;
+    }
+
+    main aside .upper a strong {
+        display: none;
+    }
+
+    main aside .upper a {
+        padding: 10px 20px !important;
+    }
+
+    main aside .upper a span {
+        margin: auto;
+    }
+}
+
+@media (min-width:0px) and (max-width:780px) {
+    .services_container .card {
+        width: 100%;
+    }
+}
+
+@media (min-width:781px) and (max-width:1200px) {
+    .services_container .card {
+            width: calc((100% - 20px) / 2);
+        }
+}
