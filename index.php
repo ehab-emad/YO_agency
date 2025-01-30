@@ -19,7 +19,7 @@ $contact_data = $contact->fetch_assoc();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YO marketing agency - YO Marketing Agency</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/stylesss.css">
     <link rel="icon" href="imgs/icon.png">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,6 +62,8 @@ $contact_data = $contact->fetch_assoc();
             <a href="https://www.tiktok.com/@yoteam.agency?_t=8oU7YGt1tic&_r=1" target="_blank">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
+          
+            <a id="darkModeToggle"><i class="fa-solid fa-moon"></i> </a>
         </div>
     </nav>
 
@@ -182,7 +184,7 @@ $contact_data = $contact->fetch_assoc();
                         </div>
                     </div>
 
-                    <a href="https://wa.me/+201080389884" target="_blank">اطلب الخدمة الآن</a>
+                    <a href="https://wa.me/+201080389884" target="_blank">اطلب الكورس الآن</a>
                 </div>
             <?php } ?>
         </div>
@@ -224,32 +226,22 @@ $contact_data = $contact->fetch_assoc();
         </section>
 
     </section>
-    <section class="services">
+    <!-- articals  -->
+    <section class="articals " >
         <h2 class="title">
             مقالاتنا
         </h2>
         <div class="container flex gap-20 rtl">
             <?php
-            foreach ($articals as $articals_info) {
-
-            ?>
-                <div class="card">
-                    <div>
-                        <!-- <img src=" imgs/<?php echo $articals_info['img'] ?>" alt="yo agency marketing team"> -->
-                        <div class="info rtl">
-                        <p class="name"><sup><i class="fa-solid fa-quote-right"></i></sup>
-                                <?php echo $articals_info['art_name'] ?><sub><i
-                                        class="fa-solid fa-quote-left"></i></sub></p>
-                            <p class="description">
-                                <?php echo $articals_info['art_description'] ?> </p>
-                        </div>
-                    </div>
-
-                    <!-- <a href="https://wa.me/+201080389884" target="_blank">اطلب الخدمة الآن</a> -->
+            foreach ($articals as $articals_info) { ?>
+          
+            <div class="card-artical"> 
+                 <a href="./artical.php?id=<?php echo $articals_info['id'] ?>">    <img src=" imgs/<?php echo $articals_info['img'] ?>" alt="yo agency marketing team"></a>
                 </div>
+                    <!-- <a href="https://wa.me/+201080389884" target="_blank">اطلب الخدمة الآن</a> -->
+               
             <?php } ?>
         </div>
-
         <div id="contact"></div>
     </section>
 
@@ -314,16 +306,15 @@ $contact_data = $contact->fetch_assoc();
             <a href="#articals">مقالاتنا </a>
             <a href="#contact">اتصل بنا</a>
         </div>
-        <p class="logo"><span>YO marketing agency</span><span>-</span>حقوق النشر © 2024 جميع الحقوق محفوظة</p>
-
+       
+<div></div>
     </footer>
     <div class="powered">
-        developed by <a href="https://mohamed-hossam.vercel.app/" target="_blank">Ehab
-            Emad</a>
+    <p class="logo"><span>YO marketing agency</span><span>-</span>حقوق النشر © 2024 جميع الحقوق محفوظة</p>
     </div>
 
     <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/mains.js"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>

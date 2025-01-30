@@ -308,6 +308,16 @@ main .main-section form button:hover {
 .error-message {
     background-color: #ff634780;
 }
+.proj-name{
+    -webkit-user-modify: read-write-plaintext-only;
+    font-weight: 800;
+    font-size: 20px;
+    color: green;
+    padding: 10px;
+}
+.proj-description{
+    padding: 10px;
+}
 
 /* about */
 
@@ -347,9 +357,11 @@ label {
     width: calc((100% - 60px) / 4);
     border: solid 1px #18181823;
     border-radius: 4px;
+    min-height: fit-content;
     overflow: hidden;
     background-color: #fff;
 }
+
 
 
 .services_container .card img {

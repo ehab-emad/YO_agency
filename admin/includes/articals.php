@@ -12,7 +12,7 @@ $data = $connect->query("SELECT * FROM `artical`");
     foreach ($data as $articals_data) {
     ?>
         <div class="card">
-            <!-- <img src="../imgs/<?php echo $articals_data['img'] ?>" alt=""> -->
+            <img src="../imgs/<?php echo $articals_data['img'] ?>" alt="">
             <div class="serv-name"><?php echo $articals_data['art_name'] ?></div>
             <div class="serv-description">
                 <?php echo $articals_data['art_description'] ?>
@@ -24,7 +24,7 @@ $data = $connect->query("SELECT * FROM `artical`");
 
     <?php } ?>
     <div class="card add-serv-box">
-        <!-- <img src="../imgs/web.jpg" alt=""> -->
+        <img src="../imgs/web.jpg" alt="">
         <div class="serv-name">اسم الخدمه</div>
         <div class="serv-description">
             انها خدمه جميله جدا علاوله اتمنى ان تحجزها

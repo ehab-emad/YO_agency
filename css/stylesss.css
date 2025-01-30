@@ -165,13 +165,20 @@ nav .social .child a {
 }
 
 /* nav res */
-
+@media (min-width:0px) and (max-width:2035px) {
+     .page-articalss{padding: 20px;height: 180vh;
+        margin-top: 10px;}
+        .image-cont{width: 80%;
+        }
+}
 @media (min-width:0px) and (max-width:1035px) {
+
+
     nav .res-nav-btn {
         display: block;
         cursor: pointer;
     }
-
+   
 
     nav .links-con {
         margin-left: auto;
@@ -194,8 +201,40 @@ nav .social .child a {
     nav .links a {
         display: block;
     }
+    .page-articalss .info {
+        display: block;
+    }
+    .content{
+        width: 100%;
+    }
+    .page-articalss .card{margin-top: 0}
+    .content{
+        width: 100%;
+        padding: 10px;
+    }
+    
 }
 
+@media (min-width:1035px) and (max-width:2035px) {
+    .page-articalss .info {
+        display: flex;
+    }
+    .content .description{
+        padding: 8px;
+        font-size: 20px;
+        min-height: 290px;
+        padding-left: 20px;
+    border-left: 2px solid #777;
+    }
+   
+    .content{
+        width: 50%;
+        padding: 10px;
+    }
+    .image-cont{
+        margin-top: 100px;
+    }
+}
 /* main */
 
 main {
@@ -288,7 +327,7 @@ main .banner-word .img3 {
 }
 
 .about .word .title,
-.services .title,
+.services .title,.articals .title,
 .team .title,
 .about .word .sub-title,
 .contact .title {
@@ -329,12 +368,12 @@ main .banner-word .img3 {
 
 }
 
-.services .title,
+.services .title,.articals .title,
 .team .title {
     margin: auto;
 }
 
-.services .container {
+.services .container ,.articals .container {
     margin-top: 40px;
     flex-wrap: wrap;
     justify-content: center;
@@ -476,7 +515,101 @@ main .banner-word .img3 {
     background-color: #71b885;
     transform: scale(1.1);
 }
+.articals{
+    padding: 60px 0;
+}
+.articals .card{
+    min-height: 140px;
+    width: 60%;
+    text-align: center;
+   
+    /* border: 2px solid green; */
+    border-radius: 8px;
+    margin: 2px 4px;
+    box-shadow: 1px 8px 5px #00000058;
 
+
+
+}
+.page-articalss{
+
+padding: 80px;
+display: flex;
+/* margin-top: 120px; */
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.page-articalss .card{
+    box-shadow: 13px 14px 24px 12px #363333a1;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid green;
+    width: 1014px;
+    min-height: 402px;
+}
+.page-articalss .content-artical{
+    display: flex;
+    height: 100%;
+    align-items: start;
+    position: relative;
+}
+
+.image-cont{
+    width: 41%;
+}
+.image-cont img{
+    width: 100%;
+}
+
+
+.page-articalss .card .name{
+    padding: 30px 10px;
+    font-style: italic;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 900;
+}
+  
+.card-artical{
+    display: flex;
+    width: 200px;
+
+    /* padding: 4px; */
+    border: 3px solid green;
+    border-radius: 6px;
+    margin:0 20px ;
+}
+.card-artical img{
+    width: 100%;
+    height: 100%;
+}
+.articals .title {
+    
+    padding-top: 25px;
+}
+.articals .name{
+    background-color: rgb(60, 175, 60);
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase;
+height: 20%;
+}
+
+.articals .description{
+    padding: 10px;
+   
+    
+}
+.content-artical .description{
+    height: 80%;
+    width: 50%;
+    padding-left: 20px;
+    border-left: 2px solid #777;
+}
 /* contact */
 
 .contact {
@@ -627,7 +760,9 @@ footer p {
 @media (min-width:0px) and (max-width:950px) {
     main .banner-img {
         display: none;
-    }
+    } .page-articalss{padding: 40px;height: 210vh;
+        margin-top: 30px;}
+        .image-cont{width: 70%;}
 
     main .banner-word {
         margin: auto;
@@ -638,7 +773,6 @@ footer p {
         align-items: center;
         text-align: center;
     }
-
     main .banner-word .img2 {
         top: 100%;
     }
@@ -660,12 +794,24 @@ footer p {
     main .banner-word h1 {
         font-size: 30px;
     }
+    .page-articalss{padding: 20px;height: 205vh;
+        margin-top: 10px;}
+        .image-cont{width: 80%; margin-top: 20px;}
 }
-
+@media (min-width:0px) and (max-width:300px) {
+    .page-articalss{padding: 20px;height: 205vh;
+        margin-top: 190px;
+        margin-bottom: 70px;}
+}
 @media (min-width:0px) and (max-width:600px) {
-
+    .page-articalss{padding: 20px;height: 205vh;
+        /* margin-top: 10px; */
+    
+    
+    }
+        .image-cont{width: 80%;margin-top: 20px;}
     .about,
-    .services {
+    .services ,.articals{
         padding-left: 7%;
         padding-right: 7%;
     }
@@ -687,6 +833,9 @@ footer p {
     .services .container .card {
         width: calc((100% - 20px) / 2) !important;
     }
+    .page-articalss{padding: 30px;height: 209vh;
+        margin-top: 15px;}
+        .image-cont{width: 70%; margin-top: 20px;}
 }
 
 @media (min-width:54px) and (max-width:740px) {
@@ -787,6 +936,8 @@ footer p {
         flex-wrap: wrap;
         gap: 10px;
 
+    } .articals .card{
+        width: 80%;
     }
 
     .footer-links a {
@@ -816,6 +967,7 @@ footer p {
 main,
 .about,
 .services,
+.articals
 .contact,
 .team {
     position: relative;
@@ -836,3 +988,72 @@ main,
     }
 
 }
+/* الوضع العادي */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #4CAF50;
+  }
+  
+  /* الوضع المظلم */
+  .dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #81C784;
+    nav .social a {
+        text-transform: capitalize;
+        font-size: 18px;
+        box-shadow: 3px 2px 8px #363333a1;
+        cursor: pointer;
+        color: #518861;
+        width: 35px;
+        border: solid 2px green;}
+        nav .links a {
+            color: #f9f9f9;
+            padding: 10px 15px;
+        }
+        nav .links a:hover {
+            color: #080707;
+            padding: 10px 15px;
+            
+        }
+        .nav-bg {background-color: #121212;
+        }
+        footer {
+            background-color: #121212;  
+        }
+        .powered {  
+            background-color: #121212;  
+            box-shadow: 0px 0px 4px #b0aaaa15;
+        }
+        /* .slider-container .slider .slide .employee-description p {
+            color: black;
+        } */
+        .contact {  background-color: #121212; 
+        }
+        .contact form * {
+            background-color: white;
+        }
+        .contact form button {
+            background-color: #518861;
+            color: #fff;
+            cursor: pointer;
+        }
+        .team {background-color:#121212 ;
+        }.about {
+            background-color:#121212 ;
+
+        }
+        .contact dd sub a {
+            color: white;
+        }
+  }
+  
+  /* تطبيق الألوان */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  

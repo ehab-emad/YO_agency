@@ -174,3 +174,21 @@ $(".contact form button").click(function () {
         $(".contact form button").removeAttr("disabled")
     }, 5000)
 })
+// هنا انا انشئت متغير 
+const toggleButton = document.getElementById('darkModeToggle');
+
+// تحقق إذا تم تخزين الوضع المظلم في Local Storage
+if (localStorage.getItem('dark-mode') === 'enabled') {
+  document.body.classList.add('dark-mode');
+}
+
+toggleButton.addEventListener('click', () => {
+  const darkModeEnabled = document.body.classList.toggle('dark-mode');
+
+  // احفظ الحالة في Local Storage
+  if (darkModeEnabled) {
+    localStorage.setItem('dark-mode', 'enabled');
+  } else {
+    localStorage.setItem('dark-mode', 'disabled');
+  }
+});
